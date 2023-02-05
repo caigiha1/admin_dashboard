@@ -3,7 +3,7 @@ import { ResponsivePie } from "@nivo/pie";
 import { Box, Typography, useTheme } from "@mui/material";
 import { useGetSalesQuery } from "state/api";
 
-const BreadownChart = ({ isDashboard = false }) => {
+const BreakdownChart = ({ isDashboard = false }) => {
   const { data, isLoading } = useGetSalesQuery();
   const theme = useTheme();
 
@@ -143,4 +143,4 @@ const BreadownChart = ({ isDashboard = false }) => {
   );
 };
 
-export default BreadownChart;
+export default BreakdownChart;
